@@ -1,0 +1,70 @@
+/*CCS par T.RENAUD le 13/03/2017 pour V02.00.00
+  Copyright RTE -2017
+*/
+
+
+
+/* Header*/
+header
+{
+	position:fixed;
+	z-index:50;
+	top:0;
+	left:0;
+	width:100vw;
+	height:80px;
+	text-align:center;
+	box-shadow:1px 1px 6px black;
+
+	background: rgb(238,238,238); /* Old browsers */
+	background: -moz-linear-gradient(top, rgba(238,238,238,1) 0%, rgba(204,204,204,1) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, rgba(238,238,238,1) 0%,rgba(204,204,204,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, rgba(238,238,238,1) 0%,rgba(204,204,204,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#cccccc',GradientType=0 ); /* IE6-9 */
+}
+
+header h1
+{
+	font-family:arial;
+	color:rgba(0,0,0,0.8);
+	text-shadow:1px 1px  rgb(238,238,238),1px 1px 2px black;
+}
+
+#lateralPanel
+{
+	position:fixed;
+	z-index:10;
+	top:0px;
+	right:-250px;
+
+	width:300px;
+	height:100vh;
+
+	background: rgb(252,255,244); /* Old browsers */
+	background: -moz-linear-gradient(top, rgba(252,255,244,1) 0%, rgba(223,229,215,1) 33%, rgba(223,229,215,1) 34%, rgba(179,190,173,1) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, rgba(252,255,244,1) 0%,rgba(223,229,215,1) 33%,rgba(223,229,215,1) 34%,rgba(179,190,173,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, rgba(252,255,244,1) 0%,rgba(223,229,215,1) 33%,rgba(223,229,215,1) 34%,rgba(179,190,173,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfff4', endColorstr='#b3bead',GradientType=0 ); /* IE6-9 */
+	opacity:0;
+	transition:all 0.5s;
+	-webkit-transition:all 0.5s;
+}
+
+#lateralPanel:hover
+{
+	right:0px;
+	opacity:1;
+	box-shadow:1px 1px 6px black;
+}
+
+
+#lateralPanel .titre
+{
+	margin-top:90px; /*important*/
+	text-align:center;
+	color:white;
+	background-color:rgba(0,0,0,0.7);
+	padding:5px 0;
+}}
+
+/* Lateral Menu */
